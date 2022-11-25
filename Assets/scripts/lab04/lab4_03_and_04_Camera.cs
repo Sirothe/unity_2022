@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class lab4_03_Camera : MonoBehaviour
+public class lab4_03_and_04_Camera : MonoBehaviour
 {
     public Transform player;
     private float sensitivity = 400f;
@@ -33,6 +33,5 @@ public class lab4_03_Camera : MonoBehaviour
         // -mouseYMove aby uniknąć ofektu mouse inverse
         transform.Rotate(new Vector3(-mouseYMove, 0f, 0f), Space.Self);
         transform.rotation = Quaternion.Euler(yRotation,xRotation,0.0f);
-        Debug.Log(transform.rotation);
     }
 }
